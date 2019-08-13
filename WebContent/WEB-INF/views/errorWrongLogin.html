@@ -1,0 +1,14 @@
+
+<script type="text/javascript">
+	let elem = $('#userLoginForm');
+	elem.find(".card-header").text("Username and password didn't match");
+	/*
+
+	elem.find(".card-header").css("color", "red");
+	 */
+
+	elem.modal('show'); // couldn't trigger from plain js. why??
+	elem.blur(function() {
+		elem.find(".card-header").text("");
+	});
+</script>

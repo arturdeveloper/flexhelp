@@ -1,0 +1,61 @@
+* {
+	/* border: 1px solid red; */
+	
+}
+
+:root { -
+	-bg-color: #333; -
+	-font-color: #fff; -
+	-primary-color: #008ed6; -
+	/* -dark-overlay: rgba(0, 0, 0, 0.7); - */
+	-icon-size: 30px;
+}
+
+#userkey {
+	/* background-color: red;
+	border: 1px solid red; */
+}
+
+#uname\.errors {
+	color: #da3d0a;
+}
+
+#email\.errors {
+	color: #da3d0a;
+}
+
+body {
+	/* background: #333; */
+	background: rgb(189, 176, 160);
+	/* color: #fff; */
+	color: black;
+}
+
+.navbar {
+	border-bottom: #008ed6 3px solid;
+	opacity: 0.8;
+}
+
+header {
+	padding-top: 4em;
+}
+
+main {
+	background: bisque;
+}
+
+footer {
+	background-color: rgb(170, 208, 211, 0.8);
+}
+
+.card-img-top {
+  height: 10em;
+}
+
+.market-display-card {
+  width: 24%;
+}
+
+.providerAccordion{
+	width: 90%;
+}

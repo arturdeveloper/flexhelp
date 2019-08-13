@@ -1,0 +1,69 @@
+
+<!-- SELECTING SERVICES AND FILTERS -->
+<header>
+	<div class="row justify-content-center">
+		<div class="col-md-2">
+			<p>Select offers:</p>
+		</div>
+		<!-- <div class="row justify-content-center align-items-start"> -->
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="row">
+				<!-- make sure columns add up to 12 -->
+				<div class="col-md-4" style="text-align: center">Rent Parking
+				</div>
+				<div class="col-md-4" style="text-align: center">Rent tools</div>
+				<div class="col-md-4" style="text-align: center">Hire tutor</div>
+				<!-- <div class="col-md-4" style="text-align: center">Housework help</div> -->
+			</div>
+		</div>
+	</div>
+
+	<!-- DROPDOWN FILTERS -->
+	<div class="row align-items-center justify-content-around">
+		<!-- <div class="col p-1"> -->
+		<div class="dropdown">
+			<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+				Availability</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Morning</a> <a
+					class="dropdown-item" href="#">Daytime</a> <a class="dropdown-item"
+					href="#">Overnight</a>
+			</div>
+		</div>
+		<!-- </div> -->
+
+		<!-- <div class="col p-1"> -->
+		<div class="dropdown">
+			<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+				Budget</button>
+			<div class="dropdown-menu">
+				<form class="px-4 py-3" name="budgetForm">
+					<div class="form-group">
+						<label for="budgetStart">$</label> <input type="number"
+							class="form-control" name="budgetStart" />
+					</div>
+					<div class="form-group">
+						<label for="budgetEnd">To: $</label> <input type="number"
+							class="form-control" name="budgetEnd" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- </div> -->
+
+		<!-- <div class="col p-1"> -->
+		<div class="dropdown">
+			<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+				Seller level</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">New Seller</a> <a
+					class="dropdown-item" href="#">Level One</a> <a
+					class="dropdown-item" href="#">Level Two</a>
+			</div>
+		</div>
+		<!-- </div> -->
+
+		<div class="btn btn-primary m-1">Apply filters</div>
+	</div>
+</header>

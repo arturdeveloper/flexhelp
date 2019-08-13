@@ -1,0 +1,126 @@
+* {
+  /* border: 1px solid red; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-rows: 3em 3em max-content 5em; */
+  grid-template-rows: 3em 2em 30fr 2fr;
+  grid-template-areas:
+    "left . right right"
+    /* "header header header header" */
+    "nav nav nav nav"
+    "sidebar main main main"
+    "footer footer footer footer";
+
+  /* "left left . . . right right"
+    "nav nav nav nav nav nav"
+    "sidebar sidebar main main main"
+    "footer footer footer footer footer footer"; */
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_left {
+  grid-area: left;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-items: center;
+  padding: 0 1em;
+  border: 1px solid green;
+}
+
+.header_right {
+  grid-area: right;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-items: center;
+  padding: 0 1em;
+  border: 1px solid green;
+}
+
+.header_item {
+  padding: 1em;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* justify-self: stretch; */
+  align-items: center;
+  width: 80%;
+  padding: 0 1em;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+.sidebar div {
+  width: auto;
+  height: 2em;
+  text-align: center;
+  padding: 4px;
+}
+
+.main {
+  grid-area: main;
+  grid-gap: 2em;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* new stuff */
+input[type="email"] {
+  /* border: 2px solid red; */
+}
+
+.formAssist {
+  visibility: hidden;
+}
+/* end new stuff */
+
+@media (max-width: 600px) {
+  nav {
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    flex-flow: raw wrap;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 3em 3em auto max-content 5em; */
+    grid-template-rows: 2em 2em auto auto 2em;
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "sidebar sidebar sidebar sidebar"
+      "main main main main"
+      "footer footer footer footer";
+  }
+}
